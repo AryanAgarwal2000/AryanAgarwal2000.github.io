@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home - Company Product Website</title>
+  <title>Company Product Website</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -11,71 +11,89 @@
     <h1>Company Product Website</h1>
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <section id="home">
-      <h1>Welcome to Our Company</h1>
+      <h1>Welcome to our website!</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+      <button>Learn More</button>
+
+      <!-- Additional Content for Home -->
+      <div class="service">
+        <h2>Our Services</h2>
+        <div class="service-item">
+          <h3>Consulting</h3>
+          <p>Expert advice and solutions tailored to your needs.</p>
+        </div>
+        <div class="service-item">
+          <h3>Development</h3>
+          <p>Custom software development to meet your business goals.</p>
+        </div>
+        <div class="service-item">
+          <h3>Support</h3>
+          <p>24/7 support to ensure your operations run smoothly.</p>
+        </div>
+      </div>
+
+      <div class="team">
+        <h2>Meet Our Team</h2>
+        <div class="team-member">
+          <h3>Jane Doe</h3>
+          <p>CEO and Founder</p>
+          <p>Jane is an industry veteran with over 20 years of experience.</p>
+        </div>
+        <div class="team-member">
+          <h3>John Smith</h3>
+          <p>Lead Developer</p>
+          <p>John leads our development team with a passion for technology.</p>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <h2>What Our Clients Say</h2>
+        <p>"The team at Company has been fantastic. Their solutions have really helped our business grow."</p>
+        <cite>– Alex Johnson, CEO of TechCorp</cite>
+      </div>
+    </section>
+    <section id="products">
+      <h1>Our Products</h1>
+      <ul>
+        <li>
+          <h2>Product 1</h2>
+          <p>This is product 1</p>
+        </li>
+        <li>
+          <h2>Product 2</h2>
+          <p>This is product 2</p>
+        </li>
+        <li>
+          <h2>Product 3</h2>
+          <p>This is product 3</p>
+        </li>
+      </ul>
+    </section>
+    <section id="about">
+      <h1>About Us</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
       <button>Learn More</button>
     </section>
-
-    <section id="overview">
-      <h2>Company Overview</h2>
-      <p>Our company is a leading provider of innovative solutions designed to enhance productivity and streamline operations. Founded in 2000, we have been at the forefront of technology and customer service.</p>
-      <p>We specialize in offering state-of-the-art products and services that cater to a wide range of industries. Our mission is to deliver high-quality solutions that drive success for our clients.</p>
-    </section>
-
-    <section id="services">
-      <h2>Our Services</h2>
-      <div class="service">
-        <h3>Service 1</h3>
-        <p>We offer comprehensive consulting services to help businesses optimize their operations and achieve their goals.</p>
-      </div>
-      <div class="service">
-        <h3>Service 2</h3>
-        <p>Our team provides expert support and training to ensure seamless integration and utilization of our products.</p>
-      </div>
-      <div class="service">
-        <h3>Service 3</h3>
-        <p>We develop customized solutions tailored to the specific needs of our clients, ensuring maximum efficiency and effectiveness.</p>
-      </div>
-    </section>
-
-    <section id="team">
-      <h2>Meet Our Team</h2>
-      <div class="team-member">
-        <h3>John Doe</h3>
-        <p>CEO</p>
-        <p>John has over 20 years of experience in the industry and leads our company with a vision for innovation and excellence.</p>
-      </div>
-      <div class="team-member">
-        <h3>Jane Smith</h3>
-        <p>CTO</p>
-        <p>Jane is responsible for overseeing the development of our products and ensuring that we stay ahead of technological trends.</p>
-      </div>
-      <div class="team-member">
-        <h3>Emily Johnson</h3>
-        <p>COO</p>
-        <p>Emily manages our day-to-day operations and ensures that our services are delivered with the highest quality standards.</p>
-      </div>
-    </section>
-
-    <section id="testimonials">
-      <h2>What Our Clients Say</h2>
-      <div class="testimonial">
-        <p>"The solutions provided by this company have significantly improved our operational efficiency. Highly recommended!"</p>
-        <cite>- Alex Brown, CEO of Tech Solutions</cite>
-      </div>
-      <div class="testimonial">
-        <p>"Exceptional service and support. The team went above and beyond to ensure our needs were met."</p>
-        <cite>- Maria Garcia, Director of Operations at Innovate Inc.</cite>
-      </div>
+    <section id="contact">
+      <h1>Contact Us</h1>
+      <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br><br>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+        <input type="submit" value="Send Message">
+      </form>
     </section>
   </main>
   <script src="script.js"></script>
