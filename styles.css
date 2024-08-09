@@ -20,16 +20,26 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
+  justify-content: center; /* Center the navigation items */
 }
 
 nav li {
-  margin-right: 20px;
+  margin-right: 10px; /* Reduced margin for items to make them closer */
+}
+
+nav li:last-child {
+  margin-right: 0; /* Remove margin on the last item */
 }
 
 nav a {
   color: #fff;
   text-decoration: none;
+  padding: 0.5em 1em; /* Add padding for better click area */
+}
+
+nav a:hover {
+  background-color: #555;
+  border-radius: 4px; /* Optional: add rounded corners on hover */
 }
 
 main {
