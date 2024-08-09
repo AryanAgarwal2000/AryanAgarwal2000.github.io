@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
-  // Select all navigation links and sections
+  // Select all navigation links
   const navLinks = document.querySelectorAll("nav a");
-  const sections = document.querySelectorAll("section");
 
   // Add event listener to each navigation link
   navLinks.forEach((link) => {
