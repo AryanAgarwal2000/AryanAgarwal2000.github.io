@@ -92,6 +92,14 @@ button:hover {
   margin-bottom: 20px;
 }
 
+.service-item {
+  margin-bottom: 10px;
+}
+
+.team-member {
+  margin-bottom: 20px;
+}
+
 .service h3, .team-member h3 {
   margin-bottom: 10px;
   color: #0044cc; /* Dark blue for service and team member titles */
