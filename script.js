@@ -5,15 +5,17 @@ document.addEventListener("DOMContentLoaded", function() {
   // Add event listener to each navigation link
   navLinks.forEach((link) => {
     link.addEventListener("click", (e) => {
-      e.preventDefault(); // Prevent the default anchor click behavior
-      const sectionId = link.getAttribute("href");
-      const section = document.querySelector(sectionId);
+      // Only handle scroll if navigating to an internal section
+      if (link.getAttribute("href").startsWith('#')) {
+        e.preventDefault(); // Prevent the default anchor click behavior
+        const href = link.getAttribute("href");
+        const section = document.querySelector(href);
 
-      // Check if the section exists
-      if (section) {
-        section.scrollIntoView({ behavior: "smooth" });
-      } else {
-        console.error(`Section with id ${sectionId} not found.`);
+        if (section) {
+          section.scrollIntoView({ behavior: "smooth" });
+        } else {
+          console.error(`Section with id ${href} not found.`);
+        }
       }
     });
   });
